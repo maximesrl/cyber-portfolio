@@ -1,5 +1,10 @@
 # Portfolio – Infrastructure Linux & Cybersécurité Défensive
 
+## À propos
+
+Passionné par les systèmes et la sécurité informatique, je développe de manière autodidacte une expertise progressive en administration Linux et en cybersécurité défensive.
+Mon approche est orientée pratique : chaque compétence est construite, testée et documentée dans des environnements de laboratoire réalistes.
+
 ## Objectif
 
 Construire une base opérationnelle solide en administration système Linux et en cybersécurité défensive à travers des environnements de laboratoire structurés.
