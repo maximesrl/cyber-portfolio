@@ -144,6 +144,7 @@ Prochaines étapes prévues :
 - Segmentation réseau avancée (VLAN)
 - Automatisation Bash pour l’administration système
 - Mise en place d’une supervision sécurité
+- Cloud computing
 
 ---
 
