@@ -43,6 +43,8 @@ Ce projet démontre une compréhension concrète du fonctionnement réel d’un 
 ###  2. Linux System Administration  
 Repository : `linux-system-administration`
 
+https://github.com/maximesrl/linux-system-administration.git
+
 Simulation d’un environnement multi-utilisateurs inspiré d’un contexte entreprise :
 
 - Gestion des utilisateurs et groupes
@@ -59,6 +61,8 @@ Ce projet met l’accent sur la conception logique d’un système et la sépara
 ###  3. Linux Security Hardening  
 Repository : `linux-security-hardening`
 
+https://github.com/maximesrl/linux-security-hardening.git
+
 Mise en place de mesures de sécurisation sur un serveur Linux :
 
 - Politique firewall en "deny by default" (UFW / iptables)
@@ -71,17 +75,47 @@ Mise en place de mesures de sécurisation sur un serveur Linux :
 
 Ce projet reflète une approche défensive et une logique de réduction de surface d’attaque.
 
+### 4. Network Security Architecture
+Repository : `network-security`
+
+https://github.com/maximesrl/network-security.git
+
+Conception d’une architecture réseau segmentée avec un firewall dédié pfSense.
+
+L’environnement simule une infrastructure simple avec séparation des rôles :
+
+- Réseau Users (poste utilisateur)
+- Réseau Servers (serveur Linux)
+- Filtrage centralisé via pfSense
+
+Concepts explorés :
+
+- Segmentation réseau
+- Architecture firewall
+- Politique de filtrage stateful
+- Principe deny by default
+- Contrôle des flux inter-réseaux
+- Analyse des logs firewall
+
+Règles de sécurité implémentées :
+
+- Autorisation Users → Server : SSH (22)
+- Blocage Users → Server : autres ports
+- Blocage Servers → Users : tout trafic
+
+Ce laboratoire met en pratique les principes d’architecture réseau sécurisée et la logique de segmentation utilisée dans les environnements professionnels.
+
 ---
 
 ##  Axe de progression actuel
 
 Développement en cours autour de :
 
-- Analyse des logs système (auth.log, journalctl)
-- Corrélation d’événements
+- Analyse approfondie des logs système (auth.log, journalctl)
+- Corrélation d’événements de sécurité
 - Logique "assume breach"
-- Stratégies de segmentation réseau
-- Détection d’anomalies
+- Détection d'activités suspectes
+- Introduction aux architectures de supervision sécurité
 
 ---
 
@@ -103,12 +137,13 @@ L’objectif est une montée en compétence durable et cohérente.
 
 Prochaines étapes prévues :
 
-- Laboratoire de centralisation des logs
+- Centralisation des logs (rsyslog / journal)
+- Introduction aux outils SIEM
 - Conception de règles de détection
 - Architecture firewall avancée
-- Segmentation VLAN
-- Automatisation Bash
-- Simulation de supervision sécurité
+- Segmentation réseau avancée (VLAN)
+- Automatisation Bash pour l’administration système
+- Mise en place d’une supervision sécurité
 
 ---
 
@@ -118,4 +153,4 @@ La sécurité n’est pas une option ajoutée à un système :
 elle doit être intégrée dès la conception.
 
 Ce portfolio reflète une transition progressive :
-comprendre les systèmes → les structurer → les sécuriser.
+Comprendre les réseaux → administrer les systèmes → sécuriser les services → concevoir une architecture défensive.
