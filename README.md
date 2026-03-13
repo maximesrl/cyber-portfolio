@@ -23,7 +23,7 @@ L’objectif n’est pas l’accumulation de commandes, mais la maîtrise progre
 ## Organisation des projets
 
 ###   1. Network Fundamentals Lab  
-Repository : `network-fundamentals-lab`
+Repository : `virtual-network-setup`
 
 https://github.com/maximesrl/virtual-network-setup.git
 
